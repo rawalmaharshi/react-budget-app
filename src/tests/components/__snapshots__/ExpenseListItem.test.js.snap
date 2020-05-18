@@ -6,14 +6,13 @@ exports[`Should render ExpenseListItem with the correct expense 1`] = `
     replace={false}
     to="/edit/1"
   >
-    Edit Expense
+    <h1>
+      Books
+    </h1>
   </Link>
-  <h1>
-    Books
-  </h1>
   <p>
     Amount: 
-    750
+    $7.50
   </p>
 </div>
 `;
