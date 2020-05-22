@@ -1,50 +1,104 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render ExpenseList with empty message 1`] = `
-<div>
-  <p>
-     No expense 
-  </p>
+<div
+  className="content-container"
+>
+  <div
+    className="list-header"
+  >
+    <div
+      className="show-for-mobile"
+    >
+      Expenses
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Expense
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Amount
+    </div>
+  </div>
+  <div
+    className="list-body"
+  >
+    <div>
+      <span
+        className="list-item list-item__message"
+      >
+        No expenses
+      </span>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Should render ExpenseList with expenes 1`] = `
-<div>
-  <ExpenseListItem
-    expense={
-      Object {
-        "amount": 750,
-        "createdAt": 0,
-        "description": "Books",
-        "id": "1",
-        "note": "",
+<div
+  className="content-container"
+>
+  <div
+    className="list-header"
+  >
+    <div
+      className="show-for-mobile"
+    >
+      Expenses
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Expense
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Amount
+    </div>
+  </div>
+  <div
+    className="list-body"
+  >
+    <ExpenseListItem
+      expense={
+        Object {
+          "amount": 750,
+          "createdAt": 0,
+          "description": "Books",
+          "id": "1",
+          "note": "",
+        }
       }
-    }
-    key="1"
-  />
-  <ExpenseListItem
-    expense={
-      Object {
-        "amount": 30000,
-        "createdAt": -345600000,
-        "description": "Rent",
-        "id": "2",
-        "note": "",
+      key="1"
+    />
+    <ExpenseListItem
+      expense={
+        Object {
+          "amount": 30000,
+          "createdAt": -345600000,
+          "description": "Rent",
+          "id": "2",
+          "note": "",
+        }
       }
-    }
-    key="2"
-  />
-  <ExpenseListItem
-    expense={
-      Object {
-        "amount": 2000,
-        "createdAt": 345600000,
-        "description": "Grocery",
-        "id": "3",
-        "note": "",
+      key="2"
+    />
+    <ExpenseListItem
+      expense={
+        Object {
+          "amount": 2000,
+          "createdAt": 345600000,
+          "description": "Grocery",
+          "id": "3",
+          "note": "",
+        }
       }
-    }
-    key="3"
-  />
+      key="3"
+    />
+  </div>
 </div>
 `;

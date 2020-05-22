@@ -1,10 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%; // 16px is base size (1 rem) * 62.5% gives 10, easy to compute px thereafter
 }
 
 body {
+  color: $dark-grey;
   font-family: Helvetica, Arial, sans-serif;
   font-size: $m-size;
+  line-height: 1.6;
 }
 
 button {
